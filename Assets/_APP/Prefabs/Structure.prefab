@@ -642,40 +642,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4760259062416158648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8292244622450546916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f47d7111b1c45b583cb286e19a9ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isOrbiting: 0
-  orbitAnchor: {fileID: 4760259061578289988}
-  orbitSpeed: 100
-  orbitRadius: 0
-  rotationSpeed: 0
---- !u!114 &4760259062569853081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8292244623184073334}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f47d7111b1c45b583cb286e19a9ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isOrbiting: 0
-  orbitAnchor: {fileID: 8292244622340807908}
-  orbitSpeed: 100
-  orbitRadius: 0.01
-  rotationSpeed: 10
 --- !u!1 &4760259062574050296
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +679,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4760259062416158648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8292244622450546916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f47d7111b1c45b583cb286e19a9ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOrbiting: 0
+  orbitAnchor: {fileID: 4760259061578289988}
+  orbitSpeed: 100
+  orbitRadius: 0
+  rotationSpeed: 0
+--- !u!114 &4760259062569853081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8292244623184073334}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f47d7111b1c45b583cb286e19a9ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOrbiting: 0
+  orbitAnchor: {fileID: 8292244622340807908}
+  orbitSpeed: 100
+  orbitRadius: 0.01
+  rotationSpeed: 10
 --- !u!1001 &4760259061136065904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3538754989371283857, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
       propertyPath: m_Intensity
-      value: 79577470
+      value: 79577.47
       objectReference: {fileID: 0}
     - target: {fileID: 3538754989371283857, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
       propertyPath: m_ColorTemperature
@@ -758,7 +758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3538754989371283862, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
       propertyPath: m_Intensity
-      value: 1e+9
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 3538754989371283862, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
       propertyPath: m_VolumetricDimmer
@@ -826,14 +826,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
---- !u!4 &8292244622450546919 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3538754989463133591, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
-  m_PrefabInstance: {fileID: 4760259061136065904}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8292244622450546916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3538754989463133588, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
+  m_PrefabInstance: {fileID: 4760259061136065904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8292244622450546919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3538754989463133591, guid: e8c94c808391e4ecdae9f1d3f3417f19, type: 3}
   m_PrefabInstance: {fileID: 4760259061136065904}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &8292244623184073334 stripped
