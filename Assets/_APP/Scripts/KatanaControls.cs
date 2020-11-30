@@ -18,21 +18,35 @@ public class KatanaControls : MonoBehaviour {
     }
 
     void Update () {
+        // Slice
         if (Input.GetMouseButtonDown (1)) {
-            Debug.Log ("RMB Down");
+            Debug.Log ("Anim=>Katana: Slice");
              System.Random random = new System.Random();
-            int triggerIndex = random.Next(0, 5);//triggers.Length);
+            int triggerIndex = random.Next(0, triggers.Length);
             Debug.Log($"{triggerIndex}: {triggers[triggerIndex]}");
             animator.SetTrigger(triggers[triggerIndex]);
-            // weaponTrail.SetActive(true);
-            // weaponTrail.Play();
             weaponTrail.enableEmission = true;
         }
 
         if(!AnimatorIsPlaying()) {
-          // weaponTrail.SetActive(false);
-          // weaponTrail.Stop();
           weaponTrail.enableEmission = false;
+        }
+
+
+        // Jump
+        if(Input.GetKeyDown(KeyCode.Space)) {
+          Debug.Log("Anim=>Katana: Jumping");
+          animator.SetTrigger("Jump");
+        }
+
+        // Run
+        if(Input.GetKeyDown(KeyCode.LeftShift)) {
+            Debug.Log("Anim=>Katana: IsRunning");
+            animator.SetBool("IsRunning", true);
+        }
+        if(Input.GetKeyUp(KeyCode.LeftShift)) {
+          Debug.Log("Anim=>Katana: Walking");
+          animator.SetBool("IsRunning", false);
         }
     }
 
