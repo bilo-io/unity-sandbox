@@ -24,13 +24,13 @@ namespace VirtualMuseum {
       // We have reached the distance to Enable Object
       if (distance < distanceToAppear) {
         if (!visible) {
-          objRenderer.enabled = true; // Show Object
+          //objRenderer.enabled = true; // Show Object
           child.SetActive (true);
           visible = true;
           Debug.Log ("Visible");
         }
       } else if (visible) {
-        objRenderer.enabled = false; // Hide Object
+        //objRenderer.enabled = false; // Hide Object
         child.SetActive (false);
         visible = false;
         Debug.Log ("InVisible");
