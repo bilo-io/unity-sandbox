@@ -7,11 +7,94 @@ public class ActiveOnTrigger : MonoBehaviour
     [SerializeField]
     private GameObject child;
 
+    [Header("Conditions")]
+    [SerializeField]
+    private bool childIsActive = false;
+    [SerializeField]
+    private bool OnInitDisable = true;
+
+    [SerializeField]
+    private bool OnExitDisable = true;
+
+    [Header("Scaling")]
+    [SerializeField]
+    private bool ScaleOnToggle = true;
+    private Vector3 originalScale;
+    [SerializeField]
+    private float scalingFrames = 60;
+    [SerializeField]
+    private float scalingFramesLeft = 0;
+    [SerializeField]
+    private bool isScaling = false;
+    private bool isScalingUp = false;
+
+    private void Start() {
+        if(ScaleOnToggle) {
+            originalScale = child.transform.localScale;
+        }
+        if(OnInitDisable) {
+            child.SetActive(false);
+            if(ScaleOnToggle) {
+                child.transform.localScale = Vector3.zero;
+            }
+        }
+    }
+
     private void OnTriggerEnter(Collider other) {
-        child.SetActive(true);
+        SetChildActive(true);
     }
 
     private void OnTriggerExit(Collider other) {
-        child.SetActive(false);
+        if(OnExitDisable) {
+            SetChildActive(false);
+        }
+    }
+
+    private void Update() {
+        ScaleChild();
+    }
+
+    private void SetChildActive(bool isActive) {
+        childIsActive = isActive;
+        if(isActive) {
+            child.SetActive(true);
+            if(ScaleOnToggle) {
+                isScaling = true;
+                isScalingUp = true;
+                scalingFramesLeft = scalingFrames;
+            }
+        } else {
+            if(ScaleOnToggle) {
+                isScaling = true;
+                isScalingUp = false;
+                scalingFramesLeft = scalingFrames;
+            } else {
+                child.SetActive(false);
+            }
+        }
+    }
+    private void ScaleChild() {
+        if(ScaleOnToggle && isScaling && scalingFrames > 0) {
+            scalingFramesLeft--;
+
+            if(child.active) {
+                var childScale = child.transform.localScale;
+
+                var startScale = isScalingUp
+                    ? Vector3.zero
+                    : originalScale;
+                var endScale = isScalingUp
+                    ? originalScale
+                    : Vector3.zero;
+                child.transform.localScale = Vector3.Lerp(
+                    child.transform.localScale,
+                    endScale, Time.deltaTime * 2
+                );
+            }
+        } else {
+            isScaling = false;
+            scalingFramesLeft = 0;
+            child.SetActive(childIsActive);
+        }
     }
 }

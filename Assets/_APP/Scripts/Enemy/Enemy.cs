@@ -40,25 +40,20 @@ public class Enemy : MonoBehaviour
         //     ? thisAnimator
         //     : GetComponentInChildren<Animator>();
         target = (VirtualMuseum.Player)Object.FindObjectOfType<VirtualMuseum.Player>();
-        body.constraints = RigidbodyConstraints.None;
-    }
-
-    void Start()
-    {
-
+        if(body != null) {
+          body.constraints = RigidbodyConstraints.None;
+        }
     }
 
     void Update()
     {
         ManageState();
         ManageAction();
-        ManageMovement();
+        // ManageMovement();
     }
 
     private void FixedUpdate() {
-      {
         ManageMovement();
-      }
     }
 
     void ManageState()
@@ -125,14 +120,16 @@ public class Enemy : MonoBehaviour
         subject.transform.LookAt(target.transform);
         if(distanceToTarget > attackDistance)
         {
-            Vector3 direction = (subject.transform.position - target.transform.position).normalized;
+            Vector3 direction = (target.transform.position - subject.transform.position).normalized;
             var displacement = direction * Time.deltaTime * speed;
             body.MovePosition(displacement);
-            // body.velocity = displacement;
+            // body.velocity = new Vector3(displacement.x, 0, displacement.z) *100f;
+
+            // body.AddForce(displacement * 100);
             // controller.Move(displacement);
             // subject.transform.Translate(displacement);
         } else {
-          // body.velocity = Vector3.zero;
+          body.velocity = Vector3.zero;
         }
     }
 }
