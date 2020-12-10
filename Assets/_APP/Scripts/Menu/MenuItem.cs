@@ -7,6 +7,7 @@ namespace VirtualMuseum
     public class MenuItem : MonoBehaviour
     {
         public GameObject Text;
+        public string SceneName;
 
         // Start is called before the first frame update
         void Start()

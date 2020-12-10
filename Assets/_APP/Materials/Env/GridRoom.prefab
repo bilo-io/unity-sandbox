@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 16, y: 1, z: 16}
   m_Children: []
   m_Father: {fileID: 6831256637491687990}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!33 &5929941843080139349
 MeshFilter:
@@ -127,7 +127,7 @@ Transform:
   m_LocalScale: {x: 16, y: 1, z: 16}
   m_Children: []
   m_Father: {fileID: 6831256637491687990}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &5929941843112855243
 MeshFilter:
@@ -223,7 +223,7 @@ Transform:
   m_LocalScale: {x: 16, y: 1, z: 16}
   m_Children: []
   m_Father: {fileID: 6831256637491687990}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 90, z: 0}
 --- !u!33 &5929941843555597775
 MeshFilter:
@@ -319,7 +319,7 @@ Transform:
   m_LocalScale: {x: 16, y: 1, z: 16}
   m_Children: []
   m_Father: {fileID: 6831256637491687990}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
 --- !u!33 &5929941843764402777
 MeshFilter:
@@ -415,7 +415,7 @@ Transform:
   m_LocalScale: {x: 16, y: 1, z: 16}
   m_Children: []
   m_Father: {fileID: 6831256637491687990}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &5929941844147503855
 MeshFilter:
@@ -511,7 +511,7 @@ Transform:
   m_LocalScale: {x: 16, y: 1, z: 16}
   m_Children: []
   m_Father: {fileID: 6831256637491687990}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!33 &5929941844425316172
 MeshFilter:
@@ -603,12 +603,12 @@ Transform:
   m_LocalPosition: {x: 15.919999, y: 4.5, z: 6.534999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5929941843555597774}
+  - {fileID: 5929941843112855242}
   - {fileID: 5929941844147503854}
   - {fileID: 5929941844425316175}
   - {fileID: 5929941843764402776}
   - {fileID: 5929941843080139348}
-  - {fileID: 5929941843555597774}
-  - {fileID: 5929941843112855242}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

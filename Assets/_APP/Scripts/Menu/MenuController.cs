@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace VirtualMuseum
 {
@@ -43,6 +44,19 @@ namespace VirtualMuseum
 
       if(Input.GetKeyDown(KeyCode.RightArrow)) {
         NextItem();
+      }
+
+      if(Input.GetKeyDown(KeyCode.Return)) {
+        var sceneName = items[index].SceneName;
+        Debug.Log($"Opening Menu Item: {sceneName}");
+
+        if(sceneName.Equals("Exit")) {
+          Application.Quit();
+        } else {
+          PlayerPrefs.SetString("sceneName", sceneName);
+          SceneManager.LoadScene("Loading");
+          // SceneManager.LoadScene(sceneName);
+        }
       }
 
       Animate();

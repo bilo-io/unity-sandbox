@@ -5637,15 +5637,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038321252}
-  m_LocalRotation: {x: 0.47060028, y: 0.3296418, z: -0.6224047, w: -0.5314924}
-  m_LocalPosition: {x: 1.4851964, y: 0.68099433, z: -0.5652654}
+  m_LocalRotation: {x: -0, y: -0.47829646, z: -0, w: 0.8781985}
+  m_LocalPosition: {x: 1.344, y: -0.385, z: -0.997}
   m_LocalScale: {x: 0.09999999, y: 0.1, z: 0.09999999}
   m_Children:
   - {fileID: 1970006732}
   - {fileID: 2014548780}
   m_Father: {fileID: 2050009349}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -5.158, y: -70.055, z: 462.626}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -57.148, z: 0}
 --- !u!114 &1038321254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5659,6 +5659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 2014548779}
+  SceneName: Prototype
 --- !u!135 &1038321255
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5728,6 +5729,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050009349}
     m_Modifications:
+    - target: {fileID: 4760259060528456823, guid: 4a050d79448a64327989fc4af6048965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0545fe47734104d8ea98988c9d42d17d, type: 2}
+    - target: {fileID: 4760259061411563750, guid: 4a050d79448a64327989fc4af6048965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0545fe47734104d8ea98988c9d42d17d, type: 2}
+    - target: {fileID: 4760259061578289986, guid: 4a050d79448a64327989fc4af6048965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0545fe47734104d8ea98988c9d42d17d, type: 2}
+    - target: {fileID: 4760259061937137239, guid: 4a050d79448a64327989fc4af6048965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0545fe47734104d8ea98988c9d42d17d, type: 2}
+    - target: {fileID: 4760259062176691547, guid: 4a050d79448a64327989fc4af6048965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0545fe47734104d8ea98988c9d42d17d, type: 2}
+    - target: {fileID: 4760259062216376381, guid: 4a050d79448a64327989fc4af6048965, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0545fe47734104d8ea98988c9d42d17d, type: 2}
     - target: {fileID: 4760259062574050295, guid: 4a050d79448a64327989fc4af6048965, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5817,7 +5842,7 @@ Transform:
   - {fileID: 1452804436}
   - {fileID: 1299716293}
   m_Father: {fileID: 2050009349}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 50.742, z: 0}
 --- !u!114 &1196085120
 MonoBehaviour:
@@ -5832,6 +5857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 1299716292}
+  SceneName: BossFight
 --- !u!135 &1196085121
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11028,7 +11054,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 10
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -11253,7 +11279,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529028824}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11485,7 +11511,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -11597,12 +11623,12 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e853459bcae43435fa43cfb882ee02e8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.75
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 197
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -11721,15 +11747,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767298335}
-  m_LocalRotation: {x: 0.22038375, y: -0.96175176, z: -0.15930234, w: 0.03297508}
-  m_LocalPosition: {x: 0.7295016, y: -0.592458, z: 1.4270394}
+  m_LocalRotation: {x: -0.41499284, y: -0.90131515, z: -0.12284128, w: -0.017945392}
+  m_LocalPosition: {x: 0.25159374, y: 0.053, z: 3.229}
   m_LocalScale: {x: 0.09999999, y: 0.1, z: 0.09999999}
   m_Children:
   - {fileID: 1529028825}
   - {fileID: 1926799795}
   m_Father: {fileID: 2050009349}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -16.971, y: -171.968, z: -27.013}
+  m_LocalEulerAnglesHint: {x: -11.92, y: -187.89, z: 50.27}
 --- !u!114 &1767298337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11743,6 +11769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 1926799794}
+  SceneName: Exit
 --- !u!135 &1767298338
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11833,13 +11860,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790402435}
   m_LocalRotation: {x: -0.26134217, y: 0.8283612, z: 0.14908259, w: 0.47253823}
-  m_LocalPosition: {x: -0.56, y: 0.34, z: 0.51}
+  m_LocalPosition: {x: -0.56, y: 0.34, z: 0.639}
   m_LocalScale: {x: 0.09999999, y: 0.1, z: 0.09999999}
   m_Children:
   - {fileID: 1585450125}
   - {fileID: 1340032440}
   m_Father: {fileID: 2050009349}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -29.602, y: 125.829, z: -19.629}
 --- !u!114 &1790402437
 MonoBehaviour:
@@ -11854,6 +11881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 1340032439}
+  SceneName: Tutorial
 --- !u!135 &1790402438
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12088,7 +12116,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8632076, b: 0.8632076, a: 1}
   m_Intensity: 10000
   m_Range: 10
   m_SpotAngle: 30
@@ -12130,9 +12158,9 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 1, y: 1}
+  m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5500
+  m_ColorTemperature: 13449
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -12645,9 +12673,9 @@ Transform:
   m_Children:
   - {fileID: 1073298712}
   - {fileID: 322193660}
-  - {fileID: 1038321253}
   - {fileID: 1790402436}
   - {fileID: 1196085119}
+  - {fileID: 1038321253}
   - {fileID: 1767298336}
   m_Father: {fileID: 0}
   m_RootOrder: 1
