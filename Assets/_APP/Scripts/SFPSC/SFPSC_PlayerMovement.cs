@@ -42,6 +42,7 @@ public class SFPSC_PlayerMovement : MonoBehaviour
     public float jumpForce = 500.0f;
     public float jumpCooldown = 1.0f;
     private bool jumpBlocked = false;
+    public bool canDoubleJump = true;
 
     private SFPSC_WallRun wallRun;
     private SFPSC_GrapplingHook grapplingHook;

@@ -11,7 +11,7 @@ public class ActiveOnTrigger : MonoBehaviour
     [SerializeField]
     private bool childIsActive = false;
     [SerializeField]
-    private bool OnInitDisable = true;
+    private bool OnInitDisable;
 
     [SerializeField]
     private bool OnExitDisable = true;
@@ -28,7 +28,7 @@ public class ActiveOnTrigger : MonoBehaviour
     private bool isScaling = false;
     private bool isScalingUp = false;
 
-    private void Start() {
+    private void Awake() {
         if(ScaleOnToggle) {
             originalScale = child.transform.localScale;
         }
