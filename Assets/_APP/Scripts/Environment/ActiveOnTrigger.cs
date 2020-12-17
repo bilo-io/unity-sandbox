@@ -21,7 +21,7 @@ public class ActiveOnTrigger : MonoBehaviour
     private bool ScaleOnToggle = true;
     private Vector3 originalScale;
     [SerializeField]
-    private float scalingFrames = 60;
+    private float scalingFrames;
     [SerializeField]
     private float scalingFramesLeft = 0;
     [SerializeField]

@@ -18,7 +18,7 @@ namespace VirtualMuseum
         // Update is called once per frame
         void Update()
         {
-
+          
         }
 
         public void SetActiveText(bool isActive)

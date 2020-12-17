@@ -50,12 +50,13 @@ namespace VirtualMuseum
         var sceneName = items[index].SceneName;
         Debug.Log($"Opening Menu Item: {sceneName}");
 
-        if(sceneName.Equals("Exit")) {
+        if(sceneName.Equals("Exit"))
+        {
           Application.Quit();
-        } else {
-          PlayerPrefs.SetString("sceneName", sceneName);
-          SceneManager.LoadScene("Loading");
-          // SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+          SceneSystem.instance.LoadScene(sceneName, true);
         }
       }
 

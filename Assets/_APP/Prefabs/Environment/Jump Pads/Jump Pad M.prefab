@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18f8555294f14a20afa387356dd9545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 25
+  jumpForce: 30
 --- !u!198 &5465958140126175489
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -301,7 +301,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 1, b: 1, a: 1}
+      minColor: {r: 1, g: 0.0141509175, b: 0.0141509175, a: 1}
       maxColor: {r: 0.2185965, g: 0.029681386, b: 0.2735849, a: 1}
       maxGradient:
         serializedVersion: 2
@@ -365,7 +365,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.2
-      minScalar: 0.02
+      minScalar: 0.01
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4088,8 +4088,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.9245283, g: 0.87188077, b: 0.5189569, a: 1}
-        key1: {r: 0, g: 0.7498386, b: 0.98039216, a: 1}
+        key0: {r: 1, g: 0.17174752, b: 0, a: 1}
+        key1: {r: 0, g: 0, b: 0, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4201,7 +4201,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.759434, g: 0.89873093, b: 1, a: 1}
+      maxColor: {r: 0.6509434, g: 0.14736214, b: 0.015352436, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
