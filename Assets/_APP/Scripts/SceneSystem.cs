@@ -29,6 +29,22 @@ namespace VirtualMuseum
             );
         }
 
+        public void ReloadScene()
+        {
+            var sceneName = PlayerPrefs.GetString("sceneName");
+            Debug.Log($"SceneSystem: ReloadingScene => {sceneName}");
+
+            StartCoroutine(
+                FadeToBlack(
+                    true,
+                    () => {
+                        SceneManager.LoadScene("Loading");
+                    },
+                    1f
+                )
+            );
+        }
+
         IEnumerator FadeToBlack(bool fadeToBlack, Action callback, float fadeSpeed)
         {
             Color color = blackScreen.GetComponent<Image>().color;

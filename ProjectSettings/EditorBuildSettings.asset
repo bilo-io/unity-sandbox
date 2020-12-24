@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_APP/Scenes/UI/Loading.unity
     guid: ea15d43fe6fa74ce7b1c043961b7551c
+  - enabled: 1
+    path: Assets/_APP/Scenes/Race/Course0.unity
+    guid: 050a147733e234b08b4fbf7acfe0ae5e
   m_configObjects: {}

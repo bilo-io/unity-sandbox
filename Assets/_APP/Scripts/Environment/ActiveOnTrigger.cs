@@ -29,7 +29,7 @@ public class ActiveOnTrigger : MonoBehaviour
     private bool isScalingUp = false;
 
     private void Awake() {
-        if(ScaleOnToggle) {
+        if(ScaleOnToggle && child != null) {
             originalScale = child.transform.localScale;
         }
         if(OnInitDisable) {

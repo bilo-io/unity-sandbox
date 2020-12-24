@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 54948880}
   - component: {fileID: 54948879}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BlackScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6132,7 +6132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 1299716292}
-  SceneName: BossFight
+  SceneName: Course0
 --- !u!135 &1196085121
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11879,7 +11879,7 @@ GameObject:
   - component: {fileID: 1671012699}
   - component: {fileID: 1671012700}
   m_Layer: 0
-  m_Name: Scene
+  m_Name: SceneSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
